@@ -1,0 +1,114 @@
+/* Media Queries */
+$gray: #808080;
+$black: #030303;
+$primary-font: "Roboto Mono", sans serif;
+
+@media (min-width: 768px) {
+  /*Index page Styles */
+  .home-grid {
+    h1 {
+      font-size: 4rem;
+    }
+    .home-text {
+      position: absolute;
+      left: 45vw;
+      bottom: 10vh;
+      font-size: 3rem;
+      text-decoration: none;
+      color: $gray;
+      border: solid 2px $gray;
+      border-radius: 15%;
+    }
+  }
+
+  /*Portfolio Page Styles */
+
+  .show-desktop {
+    margin: 5vw 5vh 2vw 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: $primary-font;
+    a {
+      text-decoration: none;
+    }
+    nav {
+      margin-left: 40vw;
+      a {
+        padding-right: 3vw;
+        color: $black;
+      }
+      display: flex;
+    }
+
+    /*Aztrek Fade Responsive Style*/
+    .aztrek-grid {
+      grid-template-rows: auto;
+      grid-template-columns: repeat(5, 20%);
+      display: grid;
+    }
+    .small-ad {
+      grid-row: 1 / 2;
+    }
+  }
+
+  //Kamikaze Tablet styles
+  .heading-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 840px) {
+  /*Aztrek Grid Responsive Style*/
+  .aztrek-grid {
+    grid-template-columns: repeat(10, 10%);
+  }
+  .small-ad {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: 1024px) {
+
+    /*Portfolio Page Styles*/
+    .navbar {
+      .top-left-text {
+       padding-right: 40vw;
+      }
+    }
+
+
+
+    .small-ad {
+      grid-row: 1/2;
+      grid-column: 1/4;
+    }
+  }
+  @media (min-width: 1200px) {
+    /*Index page Styles */
+    .home-grid {
+      h1 {
+        font-size: 4rem;
+        text-decoration: underline;
+      }
+      img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 20%;
+      }
+      .home-text {
+        position: absolute;
+        left: 45vw;
+        bottom: 10vh;
+        font-size: 3rem;
+        text-decoration: none;
+        color: $gray;
+        border: solid 2px $gray;
+        border-radius: 15%;
+      }
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+}
