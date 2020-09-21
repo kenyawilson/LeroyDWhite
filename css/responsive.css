@@ -1,9 +1,7 @@
 /* Media Queries */
 @media (min-width: 768px) {
   /*Index page Styles */
-  .home-grid h1 {
-    font-size: 4rem;
-  }
+
   .home-grid .home-text {
     position: absolute;
     left: 45vw;
@@ -91,10 +89,6 @@
 
 @media (min-width: 840px) and (min-width: 1200px) {
   /*Index page Styles */
-  .home-grid h1 {
-    font-size: 4rem;
-    text-decoration: underline;
-  }
   .home-grid img {
     max-width: 50%;
     height: auto;
