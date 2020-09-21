@@ -48,6 +48,10 @@ body {
   color: #808080;
 }
 
+.bg-custom {
+  background-color: black;
+}
+
 .container {
   max-width: 100rem;
   margin: 0 auto;
