@@ -23,11 +23,6 @@ body {
   color: #808080;
 }
 
-.home-grid h1 {
-  text-align: center;
-  margin-bottom: 10vh;
-}
-
 .home-grid .home-text {
   position: absolute;
   left: 35vw;
