@@ -45,6 +45,10 @@ body {
   color: #030303;
 }
 
+.bg-custom {
+  background-color: black;
+}
+
 .gray {
   color: #808080;
 }
