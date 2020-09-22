@@ -298,7 +298,7 @@ footer {
 /*Plug Series styles*/
 .plug-series-video {
   position: absolute;
-  left: -250px;
+  left: -150px;
   bottom: 0;
   min-width: 100%;
   max-height: 60%;
