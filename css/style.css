@@ -190,6 +190,9 @@ img {
 .card .azfade-card {
   height: 280px;
 }
+.card .nba-card {
+  height: 280px;
+}
 
 .card:hover {
   width: 300px;
@@ -212,10 +215,6 @@ p.desc {
   position: absolute;
   top: 10px;
   padding: 10px;
-}
-
-.nba-card img {
-  max-height: 20vh;
 }
 
 /*Styles for contact page*/
