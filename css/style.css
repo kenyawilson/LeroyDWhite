@@ -214,6 +214,10 @@ p.desc {
   padding: 10px;
 }
 
+.nba-card img {
+  max-height: 20vh;
+}
+
 /*Styles for contact page*/
 #contact {
   width: 100%;
