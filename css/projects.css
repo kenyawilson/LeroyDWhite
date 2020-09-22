@@ -7,6 +7,16 @@ body {
   color: #030303;
 }
 
+.navbar {
+  background-color: black;
+}
+
+.navbar div ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto Mono", sans serif;
+}
+
 .Roboto {
   font-family: "Roboto Mono", sans serif;
   text-align: center;
