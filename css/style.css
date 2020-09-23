@@ -578,7 +578,8 @@ hr {
 .flip-card-back {
   background-color: black;
   color: black;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .flip-card-back h1, .flip-card-back h2 {
@@ -592,8 +593,8 @@ hr {
 
 .flip-card-back p {
   font-size: .9rem;
+  color: black;
   font-weight: bold;
   background: #fff;
-}
 
 /*# sourceMappingURL=style.css.map */
