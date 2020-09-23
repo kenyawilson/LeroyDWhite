@@ -85,6 +85,18 @@
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
+  
+  /*Education Page styles*/
+  .smaller-image {
+    margin-left: 20vw;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 50%;
+  }
 }
 
 @media (min-width: 840px) and (min-width: 1200px) {
