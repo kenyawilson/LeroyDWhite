@@ -581,4 +581,17 @@ hr {
   transform: rotateY(180deg);
 }
 
+.flip-card-back h1, .flip-card-back h2 {
+  background-color: white;
+  font-size: 2rem;
+}
+
+.flip-card-back h2 {
+  font-size: 1.5rem;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
