@@ -583,7 +583,7 @@ hr {
 
 .flip-card-back h1, .flip-card-back h2 {
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .flip-card-back h2 {
@@ -591,7 +591,10 @@ hr {
 }
 
 .flip-card-back p {
-  font-size: 1rem;
+  font-size: .9rem;
+  color: black;
+  font-weight: bold;
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
