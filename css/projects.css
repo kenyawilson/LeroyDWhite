@@ -190,7 +190,6 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 /* Global Project Page Styles*/
 .project-page {
   font-family: "Roboto Mono", sans serif;
@@ -260,6 +259,17 @@ footer {
   object-fit: cover;
   width: 100%;
 }
+
+.project-page .nba-grid img {
+  max-width: 49%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.project-page iframe {
+  margin-left: -13vw;
+}
+
 
 /* Kamikaze page styles*/
 #comic-strip {
