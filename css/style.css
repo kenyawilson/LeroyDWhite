@@ -493,10 +493,7 @@ hr {
 .top-center {
   margin-top: 10vh;
   text-align: center;
-  font-family: $primary-font;
-  h1 {
-    font-family: 'Roboto Mono', sans serif;
-  }
+  font-family: 'Roboto Mono', sans serif;
 }
 
 .smaller-image {
