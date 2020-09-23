@@ -577,7 +577,7 @@ hr {
 /* Style the back side */
 .flip-card-back {
   background-color: black;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -592,7 +592,6 @@ hr {
 
 .flip-card-back p {
   font-size: .9rem;
-  color: black;
   font-weight: bold;
   background: #fff;
 }
