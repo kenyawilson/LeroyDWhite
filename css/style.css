@@ -615,4 +615,18 @@ hr {
   background-color: white;
   font-size: 1rem;
 }
+
+/*3am Video styles*/
+.plug-series-video {
+  position: absolute;
+  left: -150px;
+  bottom: 0;
+  min-width: 100%;
+  max-height: 60%;
+}
+
+.full-video {
+  text-align: center;
+  font-family: "Roboto Mono", sans serif;
+}
 /*# sourceMappingURL=style.css.map */
