@@ -14,6 +14,27 @@
     border: solid 2px #808080;
     border-radius: 15%;
   }
+  
+  /*NBA Allstar Weekend styles*/
+  .project-page iframe {
+    margin-left: 4vw;
+  }
+  .project-page h2 {
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .project-page .top {
+    font-size: 1.2rem;
+    padding-bottom: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
   /*Education Page styles*/
   .smaller-image {
     margin-left: 20vw;
@@ -97,6 +118,22 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
+  }
+  
+    /*NBA Allstar Weekend respnosive styles */
+  .project-page .nba-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project-page .nba-grid img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10%;
   }
 }
 
