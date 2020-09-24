@@ -23,6 +23,11 @@ body {
   color: #808080;
 }
 
+.home-grid h1 {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
 .home-grid .home-text {
   position: absolute;
   left: 35vw;
@@ -39,10 +44,23 @@ body {
   background-color: black;
 }
 
+.navbar div a {
+  text-decoration: none;
+}
+
+.navbar div a:hover {
+  color: white;
+}
+
 .navbar div ul li a {
   text-decoration: none;
   color: #fff;
   font-family: "Roboto Mono", sans serif;
+}
+
+.navbar div ul li a:hover {
+  color: #808080;
+  border: 2px solid #808080;
 }
 
 .container {
@@ -90,6 +108,11 @@ body {
   margin-top: 5vh;
   background-color: black;
   color: #fff;
+}
+
+.footer div .footer-gray {
+  color: #808080;
+  font-size: 2rem;
 }
 
 .footer .footer-container {
@@ -188,9 +211,6 @@ img {
 }
 
 .card .azfade-card {
-  height: 280px;
-}
-.card .nba-card {
   height: 280px;
 }
 
@@ -493,12 +513,13 @@ hr {
 .top-center {
   margin-top: 10vh;
   text-align: center;
-  font-family: 'Roboto Mono', sans serif;
+  font-family: "Roboto Mono", sans serif;
 }
 
 .smaller-image {
   border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -508,12 +529,23 @@ hr {
 .typewrite {
   margin-top: 10vh;
   margin-bottom: 5vh;
-  animation: type 5s steps(22);
+  -webkit-animation: type 5s steps(22);
+          animation: type 5s steps(22);
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid black;
   font-size: 1.5rem;
 }
+
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 22ch;
+  }
+}
+
 @keyframes type {
   0% {
     width: 0ch;
@@ -523,8 +555,6 @@ hr {
   }
 }
 
-
-/*Flip Cards on Education & Experience pages*/
 /*Flip Cards on Education & Experience pages*/
 .flip-card {
   margin-left: 10%;
@@ -602,7 +632,8 @@ hr {
           transform: rotateY(180deg);
 }
 
-.flip-card-back h1, .flip-card-back h2 {
+.flip-card-back h1,
+.flip-card-back h2 {
   background-color: white;
   font-size: 2rem;
 }
@@ -614,19 +645,5 @@ hr {
 .flip-card-back p {
   background-color: white;
   font-size: 1rem;
-}
-
-/*3am Video styles*/
-.plug-series-video {
-  position: absolute;
-  left: -150px;
-  bottom: 0;
-  min-width: 100%;
-  max-height: 60%;
-}
-
-.full-video {
-  text-align: center;
-  font-family: "Roboto Mono", sans serif;
 }
 /*# sourceMappingURL=style.css.map */
