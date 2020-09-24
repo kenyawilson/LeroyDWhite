@@ -193,15 +193,15 @@
     margin-bottom: 20px;
   }
 
-  /*Portfolio Page Styles*/
+ /*Portfolio Page Styles*/
   .navbar {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     .navbar-collapse {
       ul {
-        margin-left: 1vw;
+        margin-left: 8vw;
         li {
           padding-right: 3px;
-          letter-spacing: 2px;
+          letter-spacing: 4px;
         }
       }
     }
