@@ -28,6 +28,11 @@ body {
   margin-bottom: 10vh;
 }
 
+.home-grid a:hover {
+  color: white;
+  border: 1px #fff solid;
+}
+
 .home-grid .home-text {
   position: absolute;
   left: 35vw;
@@ -39,7 +44,7 @@ body {
   border-radius: 15%;
 }
 
-/*Portfolio Styles*/
+/*Global Styles*/
 .navbar {
   background-color: black;
 }
@@ -61,43 +66,6 @@ body {
 .navbar div ul li a:hover {
   color: #808080;
   border: 2px solid #808080;
-}
-
-.container {
-  background-color: black;
-}
-
-.show-desktop {
-  margin: 5vw 5vh 2vw 5vh;
-  font-family: "Roboto Mono", sans serif;
-  font-size: 12px;
-}
-
-.show-desktop .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.show-desktop .header-container .right-stick {
-  margin-left: 12vw;
-}
-
-.show-desktop a {
-  text-decoration: none;
-}
-
-.show-desktop nav {
-  margin-left: 30vw;
-}
-
-.show-desktop nav a {
-  padding-right: 3vw;
-  color: #030303;
 }
 
 .gray {
@@ -173,6 +141,11 @@ body {
           justify-content: space-between;
 }
 
+/*Portfolio Styles*/
+.container {
+  background-color: black;
+}
+
 /*portfolio grid styles */
 img {
   display: block;
@@ -183,12 +156,6 @@ img {
   border: 1px solid black;
   -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-}
-
-.img-cv {
-  margin-bottom: 35vh;
-  max-width: 100%;
-  padding: 20px;
 }
 
 .cardholder {
@@ -516,14 +483,12 @@ hr {
   font-family: "Roboto Mono", sans serif;
 }
 
-.smaller-image {
+.full-page-img {
   border: 1px solid #ccc;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   width: 100%;
+  height: auto;
 }
 
 .typewrite {
@@ -615,6 +580,7 @@ hr {
 }
 
 .flip-card-front .text-image {
+  background-color: darkgreen;
   border: 1px solid #ccc;
   -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
@@ -652,3 +618,4 @@ hr {
   width: 100%;
   height: auto;
 }
+/*# sourceMappingURL=style.css.map */
