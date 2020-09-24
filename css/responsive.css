@@ -14,6 +14,7 @@
     border: solid 2px #808080;
     border-radius: 15%;
   }
+
   
   /*NBA Allstar Weekend styles*/
   .project-page iframe {
@@ -31,16 +32,16 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
-  
+
   /*Education Page styles*/
   .smaller-image {
     margin-left: 20vw;
     border: 1px solid #ccc;
     -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     max-width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
@@ -54,11 +55,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     font-family: "Roboto Mono", sans serif;
     /*Aztrek Fade Responsive Style*/
   }
@@ -77,9 +78,9 @@
   }
   .show-desktop .aztrek-grid {
     -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    -ms-grid-columns: (20%)[5];
-        grid-template-columns: repeat(5, 20%);
+    grid-template-rows: auto;
+    -ms-grid-columns: (20%) [5];
+    grid-template-columns: repeat(5, 20%);
     display: -ms-grid;
     display: grid;
   }
@@ -91,13 +92,28 @@
   .heading-text {
     text-align: center;
   }
+  
+  .footer {
+    .footer-container {
+      .footer-item {
+        h2 {
+          font-size: 1.6rem;
+        }
+        a {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
 }
+
+
 
 @media (min-width: 840px) {
   /*Aztrek Grid Responsive Style*/
   .aztrek-grid {
-    -ms-grid-columns: (10%)[10];
-        grid-template-columns: repeat(10, 10%);
+    -ms-grid-columns: (10%) [10];
+    grid-template-columns: repeat(10, 10%);
   }
   .small-ad {
     -ms-grid-column: 1;
@@ -108,17 +124,19 @@
 
 @media (min-width: 840px) and (min-width: 1024px) {
   /*Portfolio Page Styles*/
-      .navbar {
-      .navbar-collapse {
-        ul {
-          margin-left: 8vw;
-          li {
-            margin-left: 10px;
-          }
+  .navbar {
+    font-size: 1.2rem;
+    .navbar-collapse {
+      ul {
+        margin-left: 2vw;
+        li {
+          padding-right: 3px;
+          letter-spacing: 2px;
         }
       }
     }
-  
+  }
+
   .small-ad {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -127,16 +145,16 @@
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
-  
-    /*NBA Allstar Weekend respnosive styles */
+
+  /*NBA Allstar Weekend respnosive styles */
   .project-page .nba-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .project-page .nba-grid img {
     max-width: 50%;
@@ -173,6 +191,20 @@
   }
   .item {
     margin-bottom: 20px;
+  }
+
+  /*Portfolio Page Styles*/
+  .navbar {
+    font-size: 1.3rem;
+    .navbar-collapse {
+      ul {
+        margin-left: 1vw;
+        li {
+          padding-right: 3px;
+          letter-spacing: 2px;
+        }
+      }
+    }
   }
 }
 /*# sourceMappingURL=responsive.css.map */
