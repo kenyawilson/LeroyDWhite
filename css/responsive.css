@@ -154,11 +154,21 @@
   .flip-card {
     width: 300px;
     height: 200px;
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
   .flip-card:hover {
-    margin-left: 10%;
+    margin-left: 0;
     width: 100%;
     height: 300px;
+  }
+  /*Contact Page Styles*/
+  .footer {
+    margin-top: 2vh;
+  }
+  .footer div .footer-gray {
+    letter-spacing: 2px;
+    font-size: 3rem;
   }
   /*NBA Allstar Weekend respnosive styles */
   .project-page .nba-grid {
