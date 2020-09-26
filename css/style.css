@@ -592,15 +592,15 @@ hr {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: black;
-  color: black;
+  background-color: white;
+  color: #808080;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .flip-card-back h1,
 .flip-card-back h2 {
-  background-color: white;
+  background-color: black;
   font-size: 2rem;
 }
 
@@ -609,9 +609,10 @@ hr {
 }
 
 .flip-card-back p {
-  background-color: white;
+  background-color: black;
   font-size: 1.5rem;
 }
+
 
 /*3AM Project & Plug Series page styles*/
 .full-video {
