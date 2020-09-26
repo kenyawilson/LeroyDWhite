@@ -14,8 +14,6 @@
     border: solid 2px #808080;
     border-radius: 15%;
   }
-
-  
   /*NBA Allstar Weekend styles*/
   .project-page iframe {
     margin-left: 4vw;
@@ -35,8 +33,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
-  /*Education Page styles*/
+  /*Education  & Experience Page styles*/
   .smaller-image {
     margin-left: 20vw;
     border: 1px solid #ccc;
@@ -46,6 +43,9 @@
     -o-object-fit: cover;
     object-fit: cover;
     width: 50%;
+  }
+  .full-page-img {
+    margin-left: 24vw;
   }
   /*Portfolio Page Styles */
   .show-desktop {
@@ -79,7 +79,7 @@
   .show-desktop .aztrek-grid {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
-    -ms-grid-columns: (20%) [5];
+    -ms-grid-columns: 20% [5];
     grid-template-columns: repeat(5, 20%);
     display: -ms-grid;
     display: grid;
@@ -92,27 +92,18 @@
   .heading-text {
     text-align: center;
   }
-  
-  .footer {
-    .footer-container {
-      .footer-item {
-        h2 {
-          font-size: 1.6rem;
-        }
-        a {
-          font-size: 1.3rem;
-        }
-      }
-    }
+  .footer .footer-container .footer-item h2 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-container .footer-item a {
+    font-size: 1.3rem;
   }
 }
-
-
 
 @media (min-width: 840px) {
   /*Aztrek Grid Responsive Style*/
   .aztrek-grid {
-    -ms-grid-columns: (10%) [10];
+    -ms-grid-columns: 10% [10];
     grid-template-columns: repeat(10, 10%);
   }
   .small-ad {
@@ -126,17 +117,14 @@
   /*Portfolio Page Styles*/
   .navbar {
     font-size: 1.2rem;
-    .navbar-collapse {
-      ul {
-        margin-left: 2vw;
-        li {
-          padding-right: 3px;
-          letter-spacing: 2px;
-        }
-      }
-    }
   }
-
+  .navbar .navbar-collapse ul {
+    margin-left: 2vw;
+  }
+  .navbar .navbar-collapse ul li {
+    padding-right: 3px;
+    letter-spacing: 2px;
+  }
   .small-ad {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -145,7 +133,19 @@
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
-
+  /*Experience Page styles*/
+  .desktop-grid .top-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .full-page-img {
+    margin-left: 30vw;
+  }
   /*NBA Allstar Weekend respnosive styles */
   .project-page .nba-grid {
     display: -webkit-box;
@@ -192,19 +192,20 @@
   .item {
     margin-bottom: 20px;
   }
-
- /*Portfolio Page Styles*/
+  /*Experience Page Styles*/
+  .full-page-img {
+    margin-left: 34vw;
+  }
+  /*Portfolio Page Styles*/
   .navbar {
     font-size: 1.2rem;
-    .navbar-collapse {
-      ul {
-        margin-left: 8vw;
-        li {
-          padding-right: 3px;
-          letter-spacing: 4px;
-        }
-      }
-    }
+  }
+  .navbar .navbar-collapse ul {
+    margin-left: 8vw;
+  }
+  .navbar .navbar-collapse ul li {
+    padding-right: 3px;
+    letter-spacing: 4px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
