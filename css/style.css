@@ -613,6 +613,9 @@ hr {
   font-size: 1.5rem;
   z-index: 2;
 }
+.flip-card-back ul li {
+  font-size: 1.5rem;
+}
 
 /*3AM Project & Plug Series page styles*/
 .full-video {
