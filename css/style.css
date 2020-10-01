@@ -8,40 +8,31 @@ body {
 }
 
 /* Index Page Styles */
-.home-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  font-family: "Roboto Mono", sans serif;
-  background-color: #030303;
-  color: #808080;
+.home-grid img {
+  margin-top: 47vh;
 }
 
-.home-grid h1 {
-  text-align: center;
-  margin-bottom: 10vh;
+.home-grid a {
+  position: absolute;
+  top: 23vh;
+  left: 35vw;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 5px 15px 5px 15px;
+  border: solid 2px #a9a9a9;
+  border-radius: 47%;
+  text-decoration: none;
+  color: #a9a9a9;
+  -webkit-transition: linear font-size 1s, letter-spacing 1s;
+  transition: linear font-size 1s, letter-spacing 1s;
 }
 
 .home-grid a:hover {
-  color: white;
-  border: 1px #fff solid;
-}
-
-.home-grid .home-text {
-  position: absolute;
-  left: 35vw;
-  bottom: 20vh;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #808080;
-  border: solid 2px #808080;
-  border-radius: 15%;
+  background-color: #a9a9a9;
+  color: #030303;
+  font-size: 1.5;
+  letter-spacing: 25px;
+  cursor: pointer;
 }
 
 /*Global Styles*/
@@ -50,11 +41,14 @@ body {
 }
 
 .navbar div a {
+  font-family: "Roboto Mono", sans serif;
   text-decoration: none;
+  color: #a9a9a9;
 }
 
 .navbar div a:hover {
   color: white;
+  letter-spacing: 3px;
 }
 
 .navbar div ul li a {
@@ -64,28 +58,11 @@ body {
 }
 
 .navbar div ul li a:hover {
-  color: #808080;
-  border: 2px solid #808080;
-}
-
-.gray {
-  color: #808080;
+  color: #a9a9a9;
+  border: 2px solid #a9a9a9;
 }
 
 .footer {
-  margin-top: 5vh;
-  background-color: black;
-  color: #fff;
-}
-
-.footer div .footer-gray {
-  color: #808080;
-  font-size: 2rem;
-}
-
-.footer .footer-container {
-  margin-left: 7vw;
-  font-family: "Roboto Mono", sans serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,76 +74,71 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2vh;
+  color: #a9a9a9;
+  background-color: black;
 }
 
-.footer .footer-container .footer-item {
-  padding: 16px;
+.footer .footer-item {
+  padding: 12px;
 }
 
-.footer .footer-container .footer-item h2 {
-  font-size: 16px;
-  letter-spacing: 0.26em;
+.footer .footer-item h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
   font-weight: 300;
 }
 
-.footer .footer-container .footer-item a {
+.footer .footer-item a {
   text-decoration: none;
   color: #fff;
   font-style: normal;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.4em;
   letter-spacing: 0.12em;
   cursor: pointer;
 }
 
-.footer .footer-menu {
-  max-width: 100%;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 25vh;
-  font-family: "Roboto Mono", sans serif;
-  line-height: 1.4em;
-  letter-spacing: 0.26em;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.footer .bottom-left {
+  position: relative;
+  right: 30vw;
 }
 
-/*Portfolio Styles*/
-.container {
-  background-color: black;
+.footer .bottom-left a {
+  margin-left: 7vw;
+  font-size: 1.2rem;
+  color: #a9a9a9;
 }
 
 /*portfolio grid styles */
-img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+.portfolio-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-row: auto auto;
+  grid-row-gap: 3px;
+  grid-column-gap: 5px;
 }
 
-.cardholder {
-  margin-top: 150px;
+.portfolio-layout .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+}
+
+.portfolio-layout .container .cardholder {
+  margin-left: -25vw;
   -webkit-perspective: 600px;
           perspective: 600px;
 }
 
-.card {
-  width: 300px;
-  height: 280px;
+.portfolio-layout .container .cardholder .card {
+  width: 340px;
+  height: 300px;
   background-color: transparent;
   -webkit-transform: rotateY(50deg);
           transform: rotateY(50deg);
@@ -177,11 +149,22 @@ img {
   color: transparent;
 }
 
-.card .azfade-card {
+.portfolio-layout .container .cardholder .card .azfade-card {
   height: 280px;
+  padding: 6vh;
 }
 
-.card:hover {
+.portfolio-layout .container .cardholder .card .azfade-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-layout .container .cardholder .card:hover {
   width: 300px;
   height: 300px;
   background-color: transparent;
@@ -191,17 +174,6 @@ img {
           box-shadow: 0px 0px 36px 2px rgba(0, 0, 0, 0.25);
   color: black;
   opacity: 0.3;
-}
-
-.card:hover p {
-  background-color: white;
-}
-
-p.desc {
-  z-index: 999;
-  position: absolute;
-  top: 10px;
-  padding: 10px;
 }
 
 /*Styles for contact page*/
@@ -613,12 +585,41 @@ hr {
   font-size: 1.5rem;
   z-index: 2;
 }
-.flip-card-back ul li {
-  font-size: 1.2rem;
+
+/*Lifestyle Page Styles*/
+.page {
+  font-family: "Roboto Mono", sans serif;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.page .page-title {
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11.2vw;
+  line-height: 1;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+}
+
+.page .lifestyle div {
+  margin-top: 15vh;
+}
+
+.page .lifestyle div p {
+  text-align: center;
+  letter-spacing: 7px;
+  max-width: 100vw;
+  margin-top: 3vh;
+  padding: 15px;
+  color: #ccc;
+  font-family: 'Roboto Mono', sans serif;
 }
 
 /*3AM Project & Plug Series page styles*/
-.full-video {
+.full-screen-video {
   width: 100%;
   height: auto;
 }
