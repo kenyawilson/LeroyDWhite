@@ -113,6 +113,8 @@ body {
 
 /*portfolio grid styles */
 .portfolio-layout {
+  background-color: black;
+  color: #fff;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
