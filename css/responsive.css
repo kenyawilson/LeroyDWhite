@@ -1,18 +1,61 @@
 /* Media Queries */
 @media (min-width: 768px) {
   /*Index page Styles */
-  .home-grid h1 {
-    font-size: 4rem;
+  .home-grid img {
+    margin-top: 15vh;
   }
-  .home-grid .home-text {
-    position: absolute;
-    left: 45vw;
-    bottom: 10vh;
-    font-size: 3rem;
+  .home-grid a {
+    top: 27vh;
+    left: 30vw;
+    font-size: 2rem;
+    letter-spacing: 20px;
+    padding: 12px 40px 12px 40px;
+  }
+  /*Global Styles */
+  .navbar {
+    background-color: black;
+  }
+  .navbar div a {
+    font-size: 1.5rem;
+  }
+  .navbar div a:hover {
+    color: white;
+    letter-spacing: 3px;
+  }
+  .navbar div ul li a {
     text-decoration: none;
-    color: #808080;
-    border: solid 2px #808080;
-    border-radius: 15%;
+    color: #fff;
+  }
+  .footer .footer-item {
+    padding: 15px;
+  }
+  .footer .footer-item h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+  }
+  .footer .footer-item a {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 35vw;
+  }
+  .footer .bottom-left a {
+    font-size: 2rem;
+  }
+  /*portfolio grid styles */
+  .portfolio-layout .container {
+    margin-top: 5vh;
+    -ms-grid-columns: 220px 220px 220px;
+        grid-template-columns: 220px 220px 220px;
+  }
+  .portfolio-layout .container .cardholder {
+    margin-left: -5vw;
+  }
+  .portfolio-layout .container .cardholder .card .azfade-card {
+    height: 240px;
+    padding: 1vh;
   }
   /*NBA Allstar Weekend styles*/
   .project-page iframe {
@@ -47,60 +90,42 @@
   .full-page-img {
     margin-left: 24vw;
   }
-  /*Portfolio Page Styles */
-  .show-desktop {
-    margin: 5vw 5vh 2vw 5vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-    font-family: "Roboto Mono", sans serif;
-    /*Aztrek Fade Responsive Style*/
-  }
-  .show-desktop a {
-    text-decoration: none;
-  }
-  .show-desktop nav {
-    margin-left: 40vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .show-desktop nav a {
-    padding-right: 3vw;
-    color: #030303;
-  }
-  .show-desktop .aztrek-grid {
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    -ms-grid-columns: 20% [5];
-    grid-template-columns: repeat(5, 20%);
-    display: -ms-grid;
-    display: grid;
-  }
-  .show-desktop .small-ad {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
   .heading-text {
     text-align: center;
-  }
-  .footer .footer-container .footer-item h2 {
-    font-size: 1.6rem;
-  }
-  .footer .footer-container .footer-item a {
-    font-size: 1.3rem;
   }
 }
 
 @media (min-width: 840px) {
+  /*Index page Styles */
+  .home-grid img {
+    position: absolute;
+    top: 10vh;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20%;
+  }
+  .home-grid a {
+    top: 45vh;
+    left: 60vw;
+    font-size: 2rem;
+    padding: 25px 55px 25px 55px;
+    border: 6px;
+  }
+  /*Global Styles */
+  .footer .footer-item h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.4em;
+  }
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 42vw;
+  }
+  .footer .bottom-left a {
+    font-size: 1.4rem;
+  }
   /*Aztrek Grid Responsive Style*/
   .aztrek-grid {
     -ms-grid-columns: 10% [10];
@@ -114,24 +139,30 @@
 }
 
 @media (min-width: 840px) and (min-width: 1024px) {
-  /*Portfolio Page Styles*/
-  .navbar {
-    font-size: 1.2rem;
+  /*Global Styles*/
+  .navbar div a {
+    font-size: 1.1rem;
   }
-  .navbar .navbar-collapse ul {
-    margin-left: 2vw;
+  .navbar div a:hover {
+    color: white;
+    letter-spacing: 1px;
   }
-  .navbar .navbar-collapse ul li {
-    padding-right: 3px;
-    letter-spacing: 2px;
+  .navbar div ul {
+    margin-left: 5vw;
   }
-  .small-ad {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
+  .navbar div ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  /*Lifestyle Page Styles*/
+  .page .page-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3.2rem;
+  }
+  .page .lifestyle div p {
+    font-size: 2rem;
   }
   /*Experience Page styles*/
   .desktop-grid .top-center {
@@ -196,35 +227,19 @@
   }
 }
 
-@media (min-width: 840px) and (min-width: 1200px) {
+@media (min-width: 1200px) {
   /*Index page Styles */
-  .home-grid h1 {
-    font-size: 4rem;
-    text-decoration: underline;
-  }
   .home-grid img {
     max-width: 50%;
     height: auto;
     border-radius: 20%;
   }
-  .home-grid .home-text {
-    position: absolute;
-    left: 45vw;
-    bottom: 10vh;
-    font-size: 3rem;
-    text-decoration: none;
-    color: #808080;
-    border: solid 2px #808080;
-    border-radius: 15%;
+  .home-grid a {
+    top: 45vh;
+    left: 60vw;
+    font-size: 2rem;
   }
-  .item {
-    margin-bottom: 20px;
-  }
-  /*Experience Page Styles*/
-  .full-page-img {
-    margin-left: 34vw;
-  }
-  /*Portfolio Page Styles*/
+  /*Global Styles*/
   .navbar {
     font-size: 1.2rem;
   }
@@ -234,6 +249,69 @@
   .navbar .navbar-collapse ul li {
     padding-right: 3px;
     letter-spacing: 4px;
+  }
+  .footer .footer-item {
+    padding: 15px;
+  }
+  .footer .footer-item h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.4em;
+  }
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 45vw;
+  }
+  .footer .bottom-left a {
+    font-size: 1.4rem;
+  }
+  /*Portfolio Page Styles*/
+  .portfolio-layout .container {
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: 400px 400px 400px;
+        grid-template-columns: 400px 400px 400px;
+    grid-row: auto auto auto;
+  }
+  .portfolio-layout .container .cardholder {
+    margin-left: -0vw;
+  }
+  .portfolio-layout .container .cardholder .card {
+    width: 340px;
+    height: 340px;
+  }
+  .portfolio-layout .container .cardholder .card .azfade-card {
+    height: 290px;
+    padding: 2vh;
+  }
+  .portfolio-layout .container .cardholder .card .azfade-card p .desc {
+    z-index: 999;
+    position: absolute;
+    top: 25px;
+    padding: 10px;
+  }
+  /*Lifestyle Page Styles for desktop*/
+  .page .lifestyle div video {
+    margin-left: 25vw;
+    width: 700px;
+    height: 700px;
+  }
+  .page .lifestyle div .lifestyle-image {
+    margin-left: 40vw;
+    width: 400px;
+    height: 400px;
+  }
+  .page .lifestyle div p {
+    font-size: 1.2rem;
+    margin-left: 10vw;
+    padding: 20px;
+    width: 80%;
+  }
+  /*Experience Page Styles*/
+  .full-page-img {
+    margin-left: 34vw;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
