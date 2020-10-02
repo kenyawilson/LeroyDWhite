@@ -8,8 +8,11 @@ body {
 }
 
 /* Index Page Styles */
-.home-grid img {
+.home-grid {
   background-color: #000000;
+}
+
+.home-grid img {
   margin-top: 45vh;
   width: 100%;
   height: auto;
