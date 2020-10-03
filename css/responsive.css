@@ -43,6 +43,7 @@
   }
   .footer .bottom-left a {
     font-size: 2rem;
+    margin-left: -18vw;
   }
   /*portfolio grid styles */
   .portfolio-layout .container {
