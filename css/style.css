@@ -118,6 +118,11 @@ body {
 }
 
 /*portfolio grid styles */
+
+.portfolio-bg {
+  background-color: #000000;
+}
+
 .portfolio-layout {
   display: -ms-grid;
   display: grid;
