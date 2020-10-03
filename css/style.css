@@ -80,7 +80,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2vh;
+  margin-top: 0vh;
   color: #a9a9a9;
   background-color: black;
 }
