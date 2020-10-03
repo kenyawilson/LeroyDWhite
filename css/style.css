@@ -126,6 +126,7 @@ body {
   grid-row: auto auto;
   grid-row-gap: 3px;
   grid-column-gap: 5px;
+  background-color: #000000;
 }
 
 .portfolio-layout .container {
