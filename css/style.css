@@ -418,7 +418,7 @@ hr {
 
 @media screen and (max-width: 569px) {
   #contact {
-    height: 1200px;
+    height: 800px;
   }
   .section-header {
     font-size: 50px;
