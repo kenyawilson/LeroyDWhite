@@ -465,11 +465,6 @@ hr {
 }
 
 /*Education Styles */
-.top-center {
-  margin-top: 10vh;
-  text-align: center;
-  font-family: "Roboto Mono", sans serif;
-}
 
 .full-page-img {
   border: 1px solid #ccc;
@@ -496,7 +491,6 @@ hr {
     width: 22ch;
   }
 }
-
 /*Flip Cards on Education & Experience pages*/
 .flip-card {
   margin-left: 10%;
@@ -523,21 +517,17 @@ hr {
           transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do an horizontal flip when you move the mouse over the flip box container 
 .flip-card:hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-
+*/
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -571,24 +561,47 @@ hr {
 .flip-card-back {
   background-color: black;
   color: black;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  margin-top: 43vh;
+  display: none;
+  font-family: "Roboto Mono", sans serif;
 }
 
 .flip-card-back h1,
 .flip-card-back h2 {
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .flip-card-back h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .flip-card-back ul {
   background-color: white;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   z-index: 2;
+  width: 100vw;
+  margin-left: -12vw;
+}
+
+/*Education & Experience page Styles */
+.ed-card {
+  margin-top: 28vh;
+}
+
+.ed-card img {
+  width: 100%;
+  height: auto;
+}
+
+.ed-card-top {
+  margin-top: 8vh;
+  margin-bottom: -2vh;
+}
+
+.ed-card-top img {
+  width: 100%;
+  height: auto;
 }
 
 /*Lifestyle Page Styles*/
@@ -596,7 +609,6 @@ hr {
   font-family: "Roboto Mono", sans serif;
   text-decoration: none;
   color: #ccc;
-  background-color: #000000;
 }
 
 .page .page-title {
@@ -621,8 +633,7 @@ hr {
   margin-top: 3vh;
   padding: 15px;
   color: #ccc;
-  font-family: 'Roboto Mono', sans serif;
-}
+  font-family: "Roboto Mono", sans serif;
 
 /*3AM Project & Plug Series page styles*/
 .full-screen-video {
