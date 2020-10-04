@@ -479,17 +479,6 @@ hr {
   height: auto;
 }
 
-.typewrite {
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-  -webkit-animation: type 5s steps(22);
-          animation: type 5s steps(22);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid black;
-  font-size: 1.5rem;
-}
-
 @-webkit-keyframes type {
   0% {
     width: 0ch;
