@@ -24,3 +24,9 @@ $('.contact-form').find('.form-control').blur(function() {
         }, 300);
     }
 })
+
+
+/* Hide and Show Education and Experience info */
+$("button").click(function() {
+    $(".flip-card-back").toggle();
+});
