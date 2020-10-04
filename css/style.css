@@ -599,7 +599,7 @@ hr {
   margin-bottom: -2vh;
 }
 
-.ed-card-top img {
+.ed-card-top img, smaller-image {
   width: 100%;
   height: auto;
 }
@@ -610,6 +610,14 @@ hr {
   text-decoration: none;
   color: #ccc;
   background-color: #000000;
+}
+
+page .top-center {
+  margin-top: 5vh;
+}
+
+.page .top-center p {
+  padding: 28px;
 }
 
 .page .page-title {
