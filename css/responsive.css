@@ -94,6 +94,9 @@
   .heading-text {
     text-align: center;
   }
+  .page .lifestyle div p, .page .page-title {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 840px) {
