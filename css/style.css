@@ -39,6 +39,7 @@ body {
   font-size: 1.5;
   letter-spacing: 25px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /*Global Styles*/
