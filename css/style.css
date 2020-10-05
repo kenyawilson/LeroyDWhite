@@ -4,16 +4,12 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: scroll;
-  background-color: #000000;
+  background-color: #030303;
 }
 
 /* Index Page Styles */
-.home-grid {
-  background-color: #000000;
-}
-
 .home-grid img {
-  margin-top: 45vh;
+  margin-top: 47vh;
   width: 100%;
   height: auto;
 }
@@ -25,7 +21,7 @@ body {
   font-size: 1rem;
   letter-spacing: 7px;
   padding: 8px 15px 8px 15px;
-  border: solid 4px #a9a9a9;
+  border: solid 2px #a9a9a9;
   border-radius: 47%;
   text-decoration: none;
   color: #a9a9a9;
@@ -39,7 +35,6 @@ body {
   font-size: 1.5;
   letter-spacing: 25px;
   cursor: pointer;
-  text-decoration: none;
 }
 
 /*Global Styles*/
@@ -81,7 +76,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0vh;
+  margin-top: 2vh;
   color: #a9a9a9;
   background-color: black;
 }
@@ -119,12 +114,11 @@ body {
 }
 
 /*portfolio grid styles */
-
 .portfolio-bg {
-  background-color: #000000;
+  background-color: #030303;
 }
 
-.portfolio-layout {
+.portfolio-bg .portfolio-layout {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
@@ -132,10 +126,9 @@ body {
   grid-row: auto auto;
   grid-row-gap: 3px;
   grid-column-gap: 5px;
-  background-color: #000000;
 }
 
-.portfolio-layout .container {
+.portfolio-bg .portfolio-layout .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 200px 200px;
@@ -143,13 +136,13 @@ body {
   grid-row: auto auto;
 }
 
-.portfolio-layout .container .cardholder {
+.portfolio-bg .portfolio-layout .container .cardholder {
   margin-left: -25vw;
   -webkit-perspective: 600px;
           perspective: 600px;
 }
 
-.portfolio-layout .container .cardholder .card {
+.portfolio-bg .portfolio-layout .container .cardholder .card {
   width: 340px;
   height: 300px;
   background-color: transparent;
@@ -162,12 +155,12 @@ body {
   color: transparent;
 }
 
-.portfolio-layout .container .cardholder .card .azfade-card {
+.portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card {
   height: 280px;
   padding: 6vh;
 }
 
-.portfolio-layout .container .cardholder .card .azfade-card img {
+.portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -177,7 +170,7 @@ body {
           box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.portfolio-layout .container .cardholder .card:hover {
+.portfolio-bg .portfolio-layout .container .cardholder .card:hover {
   width: 300px;
   height: 300px;
   background-color: transparent;
@@ -419,7 +412,7 @@ hr {
 
 @media screen and (max-width: 569px) {
   #contact {
-    height: 800px;
+    height: 1200px;
   }
   .section-header {
     font-size: 50px;
@@ -465,6 +458,99 @@ hr {
   }
 }
 
+/*Flip Cards on Education & Experience pages*/
+.flip-card {
+  margin-left: 10%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+*/
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-front img {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.flip-card-front .text-image {
+  background-color: darkgreen;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  width: 100%;
+  padding: 5vh 10vw 5vh 10vw;
+  font-size: 1.5rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: black;
+  margin-top: 43vh;
+  display: none;
+  font-family: "Roboto Mono", sans serif;
+}
+
+.flip-card-back h1,
+.flip-card-back h2 {
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+.flip-card-back h2 {
+  font-size: 1rem;
+}
+
+.flip-card-back ul {
+  background-color: white;
+  font-size: 0.75rem;
+  z-index: 2;
+  width: 100vw;
+  margin-left: -12vw;
+}
+
 /*Education & Experience page Styles */
 .ed-card {
   margin-top: 28vh;
@@ -487,10 +573,6 @@ hr {
 
 .top-center {
   background-color: black;
-}
-
-.top-center p {
-  color: #fff;
 }
 
 .image-container {
@@ -543,10 +625,9 @@ hr {
   font-family: "Roboto Mono", sans serif;
   text-decoration: none;
   color: #ccc;
-  background-color: #000000;
 }
 
-page .top-center {
+.page .top-center {
   margin-top: 5vh;
 }
 
@@ -563,6 +644,7 @@ page .top-center {
   text-align: center;
   border-bottom: 1px solid #ccc;
   color: #ccc;
+  text-decoration: none;
 }
 
 .page .lifestyle div {
@@ -577,6 +659,7 @@ page .top-center {
   padding: 15px;
   color: #ccc;
   font-family: "Roboto Mono", sans serif;
+}
 
 /*3AM Project & Plug Series page styles*/
 .full-screen-video {
