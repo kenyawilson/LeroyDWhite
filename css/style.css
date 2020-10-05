@@ -489,6 +489,10 @@ hr {
   background-color: black;
 }
 
+.top-center p {
+  color: #fff;
+}
+
 .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
