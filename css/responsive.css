@@ -1,81 +1,67 @@
 /* Media Queries */
 @media (min-width: 768px) {
   /*Index page Styles */
-  .home-grid {
-    img {
-      margin-top: 15vh;
-    }
-    a {
-      top: 27vh;
-      left: 30vw;
-      font-size: 2rem;
-      letter-spacing: 20px;
-      padding: 12px 40px 12px 40px;
-    }
+  .home-grid img {
+    margin-top: 15vh;
   }
-
+  .home-grid a {
+    top: 27vh;
+    left: 30vw;
+    font-size: 2rem;
+    letter-spacing: 20px;
+    padding: 12px 40px 12px 40px;
+  }
   /*Global Styles */
-
   .navbar {
     background-color: black;
-    div {
-      a {
-        font-size: 1.5rem;
-        &:hover {
-          color: white;
-          letter-spacing: 3px;
-        }
-      }
-      ul {
-        li {
-          a {
-            text-decoration: none;
-            color: #fff;
-          }
-        }
-      }
-    }
   }
-
-  .footer {
-    .footer-item {
-      padding: 15px;
-      h2 {
-        font-size: 1.8rem;
-        letter-spacing: 0.2em;
-      }
-      a {
-        font-size: 1.3rem;
-        font-weight: 300;
-      }
-    }
-    .bottom-left {
-      position: relative;
-      right: 35vw;
-      a {
-        font-size: 2rem;
-      }
-    }
+  .navbar div a {
+    font-size: 1.5rem;
   }
-
+  .navbar div a:hover {
+    color: white;
+    letter-spacing: 3px;
+  }
+  .navbar div ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer .footer-item {
+    padding: 15px;
+  }
+  .footer .footer-item h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+  }
+  .footer .footer-item a {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 35vw;
+  }
+  .footer .bottom-left a {
+    font-size: 2rem;
+  }
   /*portfolio grid styles */
-  .portfolio-bg {
-    .portfolio-layout {
-      grid-template-columns: auto auto;
-      grid-row: auto auto;
-      grid-row-gap: 2px;
-      grid-column-gap: 5px;
-      .container {
-        display: grid;
-        grid-template-columns: 200px 200px 200px 200px;
-        grid-row: auto auto auto;
-        .cardholder {
-          margin-left: -10vw;
-        }
-      }
-    }
+  .portfolio-bg .portfolio-layout {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 5px;
   }
-
+  .portfolio-bg .portfolio-layout .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+    grid-row: auto auto auto;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder {
+    margin-left: -10vw;
+  }
   /*NBA Allstar Weekend styles*/
   .project-page iframe {
     margin-left: 4vw;
@@ -95,7 +81,6 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   /*Education  & Experience Page styles*/
   .smaller-image {
     margin-left: 0vw;
@@ -107,75 +92,72 @@
     object-fit: cover;
     background-color: transparent;
   }
-
   .ed-card {
     margin-top: 18vh;
-    img {
-      width: 100%;
-      height: auto;
-    }
   }
-
+  .ed-card img {
+    width: 100%;
+    height: auto;
+  }
   .ed-card-top {
     margin-top: 8vh;
     margin-bottom: -2vh;
-    img {
-      width: 100%;
-      height: autopx;
-    }
+  }
+  .ed-card-top img {
+    width: 100%;
+    height: autopx;
   }
   .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
   }
-
   .flip-card-front {
     margin-left: 20vw;
   }
-  .flip-card-back {
-    h1,
-    h2 {
-      background-color: white;
-      font-size: 1.5rem;
-    }
-    h2 {
-      font-size: 1rem;
-    }
-    ul {
-      background-color: white;
-      font-size: 1.1rem;
-      z-index: 2;
-      width: 100vw;
-      margin-left: -12vw;
-    }
+  .flip-card-back h1,
+  .flip-card-back h2 {
+    background-color: white;
+    font-size: 1.5rem;
   }
-
+  .flip-card-back h2 {
+    font-size: 1rem;
+  }
+  .flip-card-back ul {
+    background-color: white;
+    font-size: 1.1rem;
+    z-index: 2;
+    width: 100vw;
+    margin-left: -12vw;
+  }
   .top-center {
     font-size: 1.4rem;
   }
-
   .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-bottom: 0vh;
-    button {
-      img {
-        width: 400px;
-        height: 350px;
-        object-fit: contain;
-      }
-    }
   }
-
+  .image-container button img {
+    width: 400px;
+    height: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   #resume-link {
     font-size: 2rem;
     margin-left: 33vw;
   }
-
   .heading-text {
     text-align: center;
   }
@@ -183,47 +165,38 @@
 
 @media (min-width: 840px) {
   /*Index page Styles */
-  .home-grid {
-    img {
-      position: absolute;
-      top: 10vh;
-      max-width: 50%;
-      height: auto;
-      border-radius: 20%;
-    }
-    a {
-      top: 45vh;
-      left: 60vw;
-      font-size: 2rem;
-      padding: 25px 55px 25px 55px;
-      border: 6px;
-    }
+  .home-grid img {
+    position: absolute;
+    top: 10vh;
+    max-width: 50%;
+    height: auto;
+    border-radius: 20%;
   }
-
+  .home-grid a {
+    top: 45vh;
+    left: 60vw;
+    font-size: 2rem;
+    padding: 25px 55px 25px 55px;
+    border: 6px;
+  }
   /*Global Styles */
-
-  .footer {
-    .footer-item {
-      h2 {
-        font-size: 1.3rem;
-        letter-spacing: 0.4em;
-      }
-      a {
-        font-size: 1rem;
-      }
-    }
-    .bottom-left {
-      position: relative;
-      right: 42vw;
-      a {
-        font-size: 1.4rem;
-      }
-    }
+  .footer .footer-item h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.4em;
   }
-
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 42vw;
+  }
+  .footer .bottom-left a {
+    font-size: 1.4rem;
+  }
   /*Aztrek Grid Responsive Style*/
   .aztrek-grid {
-    -ms-grid-columns: (10%) [10];
+    -ms-grid-columns: 10% [10];
     grid-template-columns: repeat(10, 10%);
   }
   .small-ad {
@@ -235,103 +208,83 @@
 
 @media (min-width: 840px) and (min-width: 1024px) {
   /*Global Styles*/
-  .navbar {
-    div {
-      a {
-        font-size: 1.1rem;
-        &:hover {
-          color: white;
-          letter-spacing: 1px;
-        }
-      }
-      ul {
-        margin-left: 5vw;
-        li {
-          a {
-            font-size: 1.1rem;
-            text-decoration: none;
-            color: #fff;
-          }
-        }
-      }
-    }
+  .navbar div a {
+    font-size: 1.1rem;
   }
-
+  .navbar div a:hover {
+    color: white;
+    letter-spacing: 1px;
+  }
+  .navbar div ul {
+    margin-left: 5vw;
+  }
+  .navbar div ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+  }
   /*Portfolio Styles*/
-.portfolio-bg {
-  .portfolio-layout {
-    .container {
-      display: grid;
-      grid-template-columns: 300px 300px 300px;
-      grid-row: auto auto auto;
-      .cardholder {
-        margin-left: 0vw;
-        .card {
-          width: 340px;
-          height: 300px;
-          .azfade-card {
-            height: 300px;
-            img {
-              object-fit: contain;
-              width: 300px;
-              height: 300px;
-              border: 1px solid black;
-              box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-            }
-          }
-        }
-      }
-    }
+  .portfolio-bg .portfolio-layout .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+    grid-row: auto auto auto;
   }
-}
-
-
-
+  .portfolio-bg .portfolio-layout .container .cardholder {
+    margin-left: 0vw;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder .card {
+    width: 340px;
+    height: 300px;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card {
+    height: 300px;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  }
   /*Lifestyle Page Styles*/
-  .page {
-    .page-title {
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-size: 3.2rem;
-    }
-    .lifestyle {
-      div {
-        p {
-          font-size: 2rem;
-        }
-      }
-    }
+  .page .page-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 3.2rem;
   }
-
+  .page .lifestyle div p {
+    font-size: 2rem;
+  }
   /*Experience Page styles*/
-  .desktop-grid {
-    .top-center {
-      display: flex;
-      flex-direction: row;
-    }
+  .desktop-grid .top-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   .smaller-image {
     margin-left: 0;
     width: 100%;
     height: auto;
   }
-
   .image-container {
     margin-bottom: 27vh;
   }
-
   /*Contact Page Styles*/
   .footer {
     margin-top: 2vh;
-    div {
-      .footer-gray {
-        letter-spacing: 2px;
-        font-size: 2rem;
-      }
-    }
   }
-
+  .footer div .footer-gray {
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
   /*NBA Allstar Weekend respnosive styles */
   .project-page .nba-grid {
     display: -webkit-box;
@@ -352,189 +305,184 @@
     padding: 0;
     font-size: 2rem;
   }
-  .flip-card-back {
-  }
 }
 
 @media (min-width: 1200px) {
   /*Index page Styles */
-  .home-grid {
-    img {
-      max-width: 50%;
-      height: auto;
-      border-radius: 20%;
-    }
-    a {
-      top: 45vh;
-      left: 60vw;
-      font-size: 2rem;
-    }
+  .home-grid img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20%;
   }
-
+  .home-grid a {
+    top: 45vh;
+    left: 60vw;
+    font-size: 2rem;
+  }
   /*Global Styles*/
   .navbar {
     font-size: 1.2rem;
-    .navbar-collapse {
-      ul {
-        margin-left: 8vw;
-        li {
-          padding-right: 3px;
-          letter-spacing: 4px;
-        }
-      }
-    }
   }
-
-  .footer {
-    .footer-item {
-      padding: 15px;
-      h2 {
-        font-size: 1.3rem;
-        letter-spacing: 0.4em;
-      }
-      a {
-        font-size: 1rem;
-      }
-    }
-    .bottom-left {
-      position: relative;
-      right: 45vw;
-      a {
-        font-size: 1.4rem;
-      }
-    }
+  .navbar .navbar-collapse ul {
+    margin-left: 8vw;
   }
-
+  .navbar .navbar-collapse ul li {
+    padding-right: 3px;
+    letter-spacing: 4px;
+  }
+  .footer .footer-item {
+    padding: 15px;
+  }
+  .footer .footer-item h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.4em;
+  }
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+  .footer .bottom-left {
+    position: relative;
+    right: 45vw;
+  }
+  .footer .bottom-left a {
+    font-size: 1.4rem;
+  }
   /*Portfolio Page Styles*/
-  .portfolio-bg {
-    .portfolio-layout {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-row: auto auto;
-      grid-row-gap: 2px;
-      grid-column-gap: 9px;
-      .container {
-        display: grid;
+  .portfolio-bg .portfolio-layout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-row: auto auto;
+    grid-row-gap: 2px;
+    grid-column-gap: 9px;
+  }
+  .portfolio-bg .portfolio-layout .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 200px 200px 200px;
         grid-template-columns: 200px 200px 200px 200px;
-        grid-row: auto auto auto auto;
-        .cardholder {
-          margin-left: 10vw;
-          perspective: 600px;
-          .card {
-            width: 500px;
-            height: 440px;
-            background-color: transparent;
+    grid-row: auto auto auto auto;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder {
+    margin-left: 10vw;
+    -webkit-perspective: 600px;
+            perspective: 600px;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder .card {
+    width: 500px;
+    height: 440px;
+    background-color: transparent;
+    -webkit-transform: rotateY(50deg);
             transform: rotateY(50deg);
+    -webkit-box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
             box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
-            transition: all 1s ease;
-            color: transparent;
-            .azfade-card {
-              height: 280px;
-              padding: 6vh;
-              img {
-                object-fit: contain;
-                  width: 100%;
-                  height: 100%;
-                  border: 1px solid black;
-                  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-              }
-            }
-          }
-        }
-      }
-    }
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    color: transparent;
   }
-
+  .portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card {
+    height: 280px;
+    padding: 6vh;
+  }
+  .portfolio-bg .portfolio-layout .container .cardholder .card .azfade-card img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  }
   /*Lifestyle Page Styles for desktop*/
-
-  .page {
-    .lifestyle {
-      div {
-        video {
-          margin-left: 25vw;
-          width: 700px;
-          height: 700px;
-        }
-        .lifestyle-image {
-          margin-left: 40vw;
-          width: 400px;
-          height: 400px;
-        }
-        p {
-          font-size: 1.2rem;
-          margin-left: 10vw;
-          padding: 20px;
-          width: 80%;
-        }
-      }
-    }
+  .page .lifestyle div video {
+    margin-left: 25vw;
+    width: 700px;
+    height: 700px;
   }
-
+  .page .lifestyle div .lifestyle-image {
+    margin-left: 40vw;
+    width: 400px;
+    height: 400px;
+  }
+  .page .lifestyle div p {
+    font-size: 1.2rem;
+    margin-left: 10vw;
+    padding: 20px;
+    width: 80%;
+  }
   /*Education & Experience page Styles */
   .grid-split {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-right: 8vw;
     margin-bottom: 15vh;
-    .ed-card {
-      margin-top: 25vh;
-      .flip-card-back {
-        ul {
-          margin-right: 2vw;
-          width: 40vw;
-        }
-      }
-      img {
-        width: 500px;
-        height: 500px;
-      }
-    }
   }
-
+  .grid-split .ed-card {
+    margin-top: 25vh;
+  }
+  .grid-split .ed-card .flip-card-back ul {
+    margin-right: 2vw;
+    width: 40vw;
+  }
+  .grid-split .ed-card img {
+    width: 500px;
+    height: 500px;
+  }
   .ed-card-top {
     margin-top: 8vh;
     margin-bottom: -2vh;
-    img {
-      width: 100%;
-      height: 400px;
-    }
   }
-
+  .ed-card-top img {
+    width: 100%;
+    height: 400px;
+  }
   /*Experience Page Styles*/
-
   .top-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center;
-    p {
-      margin-left: 15vw;
-      font-size: 1.5rem;
-      text-align: center;
-      max-width: 70vw;
-    }
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
-
+  .top-center p {
+    margin-left: 15vw;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 70vw;
+  }
   .image-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    button {
-      margin: 20px;
-      img {
-        width: 350px;
-        height: 300px;
-        transition: all 1s;
-        object-fit: contain;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
+  .image-container button {
+    margin: 20px;
+  }
+  .image-container button img {
+    width: 350px;
+    height: 300px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .image-container button img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   #resume-link {
     font-size: 2.1rem;
     margin-left: 40vw;
   }
-
 }
 /*# sourceMappingURL=responsive.css.map */
