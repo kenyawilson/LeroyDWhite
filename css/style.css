@@ -575,6 +575,12 @@ hr {
   background-color: black;
 }
 
+.top-center p {
+  font-family: "Roboto Mono", sans serif;
+  color: 	#808080;
+  padding: 28px;
+}
+
 .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
