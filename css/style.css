@@ -35,7 +35,6 @@ body {
   font-size: 1.5;
   letter-spacing: 25px;
   cursor: pointer;
-  text-decoration: none;
 }
 
 /*Global Styles*/
@@ -125,7 +124,7 @@ body {
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   grid-row: auto auto;
-  grid-row-gap: 3px;
+  grid-row-gap: 2px;
   grid-column-gap: 5px;
 }
 
@@ -573,12 +572,6 @@ hr {
 
 .top-center {
   background-color: black;
-}
-
-.top-center p {
-  font-family: "Roboto Mono", sans serif;
-  color: 	#808080;
-  padding: 28px;
 }
 
 .image-container {
