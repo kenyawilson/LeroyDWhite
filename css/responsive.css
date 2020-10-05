@@ -349,6 +349,7 @@
   }
   /*Portfolio Page Styles*/
   .portfolio-bg .portfolio-layout {
+    margin-top: 16vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto;
