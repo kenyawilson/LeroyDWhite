@@ -97,68 +97,55 @@ Remove or comment-out the code block below to see how the browser will fall-back
   }
 }
 
-footer {
-  margin-bottom: 3vh;
-}
-
-.footer .footer-container {
-  margin-bottom: 2vh;
-  margin-left: 7vw;
-  font-family: "Roboto Mono", sans serif;
+.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2vh;
+  color: #a9a9a9;
+  background-color: black;
 }
 
-.footer .footer-container .footer-item {
-  padding: 16px;
+.footer .footer-item {
+  padding: 12px;
 }
 
-.footer .footer-container .footer-item h2 {
-  font-size: 12px;
-  letter-spacing: 0.26em;
+.footer .footer-item h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
   font-weight: 300;
 }
 
-.footer .footer-container .footer-item a {
+.footer .footer-item a {
   text-decoration: none;
-  color: #030303;
+  color: #fff;
   font-style: normal;
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.4em;
   letter-spacing: 0.12em;
   cursor: pointer;
 }
 
-.footer .footer-menu {
-  max-width: 100%;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-top: 5vh;
-  font-family: "Roboto Mono", sans serif;
-  line-height: 1.4em;
-  letter-spacing: 0.26em;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.footer .bottom-left {
+  position: relative;
+  right: 30vw;
 }
+
+.footer .bottom-left a {
+  margin-left: 7vw;
+  font-size: 1.2rem;
+  color: #a9a9a9;
+}
+
 /* Global Project Page Styles*/
 .project-page {
   font-family: "Roboto Mono", sans serif;
