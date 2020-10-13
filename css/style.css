@@ -671,5 +671,6 @@ hr {
 .full-screen-video {
   width: 100%;
   height: auto;
+  margin-bottom: 30vh;
 }
 /*# sourceMappingURL=style.css.map */
