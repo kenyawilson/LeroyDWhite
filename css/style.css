@@ -580,6 +580,7 @@ hr {
   background-color: black;
   color: #ffffff;
   font-family: "Roboto Mono", sans serif;
+  text-align: center;
 }
 
 .image-container {
