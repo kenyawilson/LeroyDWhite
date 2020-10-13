@@ -578,9 +578,12 @@ hr {
 
 .top-center {
   background-color: black;
-  color: #ffffff;
+}
+
+.top-center {
   font-family: "Roboto Mono", sans serif;
   text-align: center;
+  color: #ffffff;
 }
 
 .image-container {
