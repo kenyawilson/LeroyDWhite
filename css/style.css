@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: scroll;
-  background-color: #030303;
+  background-color: black;
 }
 
 /* Index Page Styles */
@@ -671,6 +671,6 @@ hr {
 .full-screen-video {
   width: 100%;
   height: auto;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 }
 /*# sourceMappingURL=style.css.map */
