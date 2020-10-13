@@ -9,6 +9,10 @@ body {
 }
 
 /* Index Page Styles */
+.home-grid {
+ background-color: black;
+}
+
 .home-grid img {
   margin-top: 47vh;
   width: 100%;
