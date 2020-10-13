@@ -24,6 +24,7 @@ body {
   top: 22vh;
   left: 30vw;
   font-size: 1rem;
+  font-family: "Roboto Mono", sans serif;
   letter-spacing: 7px;
   padding: 8px 13px 8px 13px;
   border: solid 2px #a9a9a9;
